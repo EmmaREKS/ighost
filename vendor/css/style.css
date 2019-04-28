@@ -6,10 +6,13 @@
 .navbar-toggler-icon:hover{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}#logo_custom{margin-top: -6px;}
 @media only screen and (max-width: 760px) { #logo_custom{width: 40%;}}
 
+<<<<<<< HEAD
 .navbar-dark{
   color: #0336ee;
 }
 
+=======
+>>>>>>> 3db0f25529be7618522705af2622b883d7b58b67
 .jumbotron-fluid {
     background: url(../img/bk.jpg);
     background-attachment:static;
@@ -21,10 +24,15 @@
     color: #fff;
 }
 
+<<<<<<< HEAD
 .text-muted {
   color: #6c757d !important;
   margin-top: 22px;
   margin-bottom: 16px;
+=======
+header {
+
+>>>>>>> 3db0f25529be7618522705af2622b883d7b58b67
 }
                           
 #myCarousel .carousel-item .mask {
@@ -382,6 +390,7 @@ margin:0 5px;
   color: white;
   
 }
+<<<<<<< HEAD
 .head_table h3 {
 
   font-family: 'Francois One', sans-serif;
@@ -389,6 +398,13 @@ margin:0 5px;
   font-weight: 500;
   font-size: 33px;
 
+=======
+.head_table h3{
+  font-family: 'Francois One', sans-serif;
+  padding-top: 5px;
+  font-weight: 500;
+  font-size: 40px;
+>>>>>>> 3db0f25529be7618522705af2622b883d7b58b67
 }
 
 .price{
