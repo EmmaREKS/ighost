@@ -137,7 +137,7 @@
                     <li class="list-group-item"><i class="fas fa-times ok"></i><span class="remove">5 Gig Bandwidth</span></li>
                     <li class="list-group-item"><i class="fas fa-times ok"></i><span class="remove">5 Email Addresses</span></li>
                   </ul>
-                  <button type="button" class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
+                  <button type="button" data-toggle="modal" data-target="#myModal1" class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
     
                 </div>
               </div>
@@ -155,7 +155,7 @@
                     <li class="list-group-item"><i class="fas fa-check ok"></i>5 sub domains</li>
                     <li class="list-group-item"><i class="fas fa-check ok"></i>5 Email Addresses</li>
                   </ul>
-                  <button type="button" class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
+                  <button type="button" data-toggle="modal" data-target="#myModal2" class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
     
                 </div>
               </div>
@@ -173,7 +173,7 @@
                     <li class="list-group-item"><i class="fas fa-check ok"></i>10 sub domains</li>
                     <li class="list-group-item"><i class="fas fa-check ok"></i>20 Email Addresses</li>
                   </ul>
-                  <button type="button" class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
+                  <button type="button" data-toggle="modal" data-target="#myModal3"  class="btn btn-outline-success btn-lg Mybutton">ORDER NOW</button>
     
                 </div>
               </div>
@@ -183,9 +183,126 @@
 
        </section>
 
+<!-- mpodal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title">IGHOST SILVER</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Domain:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter domain name">
+            </div>
+          </div>
+          <input id="plan" type="hidden" name="plan" value="silver">
+          <input id="price" type="hidden" name="price" value="5000">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit"  onclick="payWithPaystack(0)" class="btn btn-default bg-success">Pay</button>
+            </div>
+          </div>
+        </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
 
+  </div>
+</div>
+<!-- //modal2 -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title">IGHOST Gold</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Domain:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter domain name">
+            </div>
+          </div>
+          <input id="plan" type="hidden" name="plan" value="Gold">
+          <input id="price" type="hidden" name="price" value="10000">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" onclick="payWithPaystack(1)" class="btn btn-default bg-success">Pay</button>
+            </div>
+          </div>
+        </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modal3 -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title">IGHOST Platinum</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Domain:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter domain name">
+            </div>
+          </div>
+          <input id="plan" type="hidden" name="plan" value="platinum">
+          <input id="price" type="hidden" name="price" value="15000">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" onclick="payWithPaystack(3)" class="btn btn-default bg-success">Pay</button>
+            </div>
+          </div>
+        </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
         
@@ -353,7 +470,7 @@
                       <div class="container">
                         <div class="row row-30">
                           <div class="col-md-4 col-xl-5">
-                            <div class="pr-xl-4"><a class="brand" href="indx.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                            <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
                               <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
                               <!-- Rights-->
                               <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>ighost</span><span>. </span><span>All Rights Reserved.</span></p>
@@ -401,5 +518,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="js/payment.js"></script>
 </html>
